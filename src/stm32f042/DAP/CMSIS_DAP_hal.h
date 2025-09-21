@@ -248,6 +248,8 @@ static __inline void LED_CONNECTED_OUT (uint32_t bit) {
     } else {
         gpio_clear(LED_CON_GPIO_PORT, LED_CON_GPIO_PIN);
     }
+#else
+    (void)bit;
 #endif
 }
 
@@ -258,6 +260,8 @@ static __inline void LED_RUNNING_OUT (uint32_t bit) {
     } else {
         gpio_clear(LED_RUN_GPIO_PORT, LED_RUN_GPIO_PIN);
     }
+#else
+    (void)bit;
 #endif
 }
 
@@ -268,6 +272,8 @@ static __inline void LED_ACTIVITY_OUT (uint32_t bit) {
     } else {
         gpio_clear(LED_ACT_GPIO_PORT, LED_ACT_GPIO_PIN);
     }
+#else
+    (void)bit;
 #endif
 }
 
