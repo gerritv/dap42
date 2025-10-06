@@ -27,7 +27,7 @@ jobs:
         run: ./util/install-toolchain.sh
 
       - name: Build Firmware
-        run: make -k STM32F103-BLUEPILL.bin
+        run: make -k DAP103-BLUEPILL.bin
         env:
           PREFIX: ~/toolchains/gcc-arm-embedded/bin/arm-none-eabi-
 
